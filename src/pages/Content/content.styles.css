@@ -1,0 +1,30 @@
+/* ラジオボタン02 */
+.radio02 {
+  display: flex;
+  justify-content: flex-end;
+}
+.radio02 input {
+  display: none;
+}
+.radio02 label {
+  display: block;
+  /* float: left; */
+  cursor: pointer;
+  width: 100px;
+  margin: 1px 0 1px 0;
+  padding: 1.4% 0 1.5% 0;
+  border-right: 1px solid #d7d7d7;
+  background: #e5e5e5;
+  color: #555e64;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  transition: 0.2s;
+}
+.radio02 label:last-of-type {
+  border-right: 0px;
+}
+.radio02 input[type='radio']:checked + label {
+  background-color: #a1b91d;
+  color: #fff;
+}
